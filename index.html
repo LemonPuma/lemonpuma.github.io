@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirill Tereschenko - Computer Science Student</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Crimson Pro', serif;
+            font-size: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            height: 100vh;
+            background-image: url('https://giffiles.alphacoders.com/209/209750.gif'); /* Replace 'cat.gif' with the actual image URL */
+            background-repeat: repeat;
+            background-size: contain;
+            animation: catAnimation 20s linear infinite;
+            opacity: 0.5; 
+            color: #fff; 
+            
         }
+
+            @keyframes catAnimation {
+                0% { background-position: 0 0; }
+                100% { background-position: 100% 0; }
+            }
+
         header {
             background-color: #333;
             padding: 20px;
@@ -32,6 +48,11 @@
             text-decoration: none;
             margin: 0 10px;
         }
+        .centered-bio {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 600px; /* Adjust the width as needed */
+}
     </style>
 </head>
 <body>
@@ -45,8 +66,10 @@
         </div>
     </header>
     <section>
-        <h2>About Me</h2>
-        <p>I'm a Computer Science student with expertise in C/C++, Python, and SQL. I love solving complex problems and building innovative software solutions. Follow me on my social media profiles to stay updated on my projects and adventures in the world of programming.</p>
+        <div class="centered-bio">
+            <h2>About Me</h2>
+            <p>I'm a Computer Science student with expertise in C/C++, Python, and SQL. I love solving complex problems and building innovative software solutions. Follow me on my social media profiles to stay updated on my projects and adventures in the world of programming.</p>
+        </div>
     </section>
 </body>
 </html>
